@@ -1,0 +1,67 @@
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+            </div>
+        </div>
+        <div class="row main-content">
+            <div class="col-lg-3">
+
+                <div id="page-controls">
+                    <button id="freshPrevious" class="page-btns">Previous</button>
+                    <button id="freshNext" class="page-btns">Next</button>
+                </div>
+
+                <div class="hbs">
+
+                    {{#each burgers}}
+                        {{#unless devoured}}
+                        <div class="burger-div fresh{{freshPageNumber}}" data-page="{{freshPageNumber}}">
+                            <div class="burger-title">
+                                <h1 class="fresh-burgers b-style">{{burger_name}}</h1>
+                            </div>
+                            <button class="burgerz b-btn" data-id="{{id}}" data-name="{{burger_name}}">Devour</button>
+                        </div>
+                        {{/unless}}
+                    {{/each}}
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+
+                <div id="burger-icon" data-totalDevPages="{{burgers.totalDevPages}}" data-totalFreshPages="{{burgers.totalFreshPages}}">
+                    <i class="fas fa-10x fa-hamburger"></i>
+                </div>
+
+                <form action="/" method="POST" id="form">
+                    <label id="burger-label">What burger would you like?</label>
+                    <input name="burger" id="burger-input" type="text">
+                    <input type="submit" id="Submit" value="Submit">
+                </form>   
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div id="page-controls">
+                    <button id="devouredPrevious" class="page-btns">Previous</button>
+                    <button id="devouredNext" class="page-btns">Next</button>
+                </div>
+
+                <div class="hbs">
+                    {{#each burgers}}
+                        {{#if devoured}}
+                        <div class="burger-div devoured{{devouredPageNumber}}" data-page="{{devouredPageNumber}}">
+                            <div class="burger-title">
+                                <h1 class="b-style">{{burger_name}}</h1>
+                            </div>
+                            <button class="trash b-btn" data-id="{{id}}">Throw away</button>
+                        </div>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
