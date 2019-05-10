@@ -6,11 +6,14 @@ var routes = require('./controllers/burgers_controller.js');
 
 //==============================================================//
 
-app.use(express.static("/public"));
+app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-app.engine('handlebars', exphbs({ defaultLayout: "main"}));
+app.engine('handlebars', exphbs({ 
+    defaultLayout: "main", 
+    layoutsDir: path.join(__dirname, 'views')
+}));
 app.set('view engine', 'handlebars');
 
 app.use(routes);
