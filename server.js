@@ -6,7 +6,7 @@ var routes = require('./controllers/burgers_controller.js');
 
 //==============================================================//
 
-app.use(express.static(__dirname + "/public"));
+app.use(express.static("/public"));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
