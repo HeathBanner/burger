@@ -6,14 +6,13 @@ var routes = require('./controllers/burgers_controller.js');
 
 //==============================================================//
 
+app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 app.engine('handlebars', exphbs({ defaultLayout: "main"}));
 app.set('view engine', 'handlebars');
-app.set('views', __dirname + '/views');
 
-app.use(express.static(__dirname + "/public"));
 app.use(routes);
 
 var PORT = process.env.PORT || 8080;
