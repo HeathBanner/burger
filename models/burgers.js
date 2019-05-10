@@ -12,13 +12,9 @@ module.exports = {
         });
     },
     updateBurger: function(colNameVal, colIdVal) {
-        console.log('BEFORE BURGER')
         orm.updateOne('burgers', 'devoured', colNameVal, 'id', colIdVal)
-        console.log('AFTER BURGER');
     },
     deleteBurger: function(id) {
-        console.log("BEFORE BURGERS FUNCTION");
         orm.deleteOne('burgers', 'id', id);
-        console.log("AFTER BURGERS FUNCTION");
     }
 };
