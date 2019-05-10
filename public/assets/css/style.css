@@ -1,0 +1,139 @@
+body {
+    background-image: url('../imgs/okeykat.png');
+    background-size: cover;
+}
+
+.main-content {
+    margin: 50px;
+}
+
+#burger-icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#form {
+    background: rgb(0, 0, 0, 0.7);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#form:hover {
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.3s ease-in-out 0s;
+    border-radius: 5px;
+}
+
+#burger-label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#burger-input {
+    display: block;
+    margin: 0px auto;
+    border: none;
+}
+
+#burger-input:hover {
+    box-shadow: 0px 0px 3px 3px rgb(0, 101, 255, 0.8);
+    transition: box-shadow 0.3s ease-in-out 0s;
+}
+
+#Submit {
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    background: lightgray;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#Submit:hover {
+    box-shadow: 0px 0px 8px 5px rgb(136, 136, 136, 0.3);
+    transition: box-shadow 0.3s ease-in-out 0s;
+}
+
+.hbs {
+    background: rgb(255, 0, 67, 0.5);
+    box-shadow: 10px 10px 8px rgb(136, 136, 136, 0.5);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.burger-div {
+    border-top: 1px solid rgb(136, 136, 136, 0.5);
+    border-radius: 5px;
+}
+
+.burger-div:hover {
+    box-shadow: 10px 10px 8px rgb(136, 136, 136, 0.5);
+    transition: box-shadow 0.3s ease-in-out 0s;
+    border-top: 1px solid rgb(136, 136, 136, 0.5);
+    border-radius: 5px;
+}
+
+.burger-title {
+    display: flex;
+    height: 130px;
+    padding: 20px;
+}
+
+.b-style {
+    font-size: 36px;
+    margin: auto auto;
+}
+
+.b-btn {
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    background: lightgray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.b-btn:hover {
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out 0s;
+}
+
+.freshone {
+    display: block;
+}
+
+.freshtwo {
+    display: none;
+}
+
+.freshthree {
+    display: none;
+}
+
+.freshfour {
+    display: none;
+}
+
+.freshfive {
+    display: none;
+}
+
+.freshsix {
+    display: none;
+}
+
+.freshseven {
+    display: none;
+}
+
+.fresheight {
+    display: none;
+}
+
+.freshnine {
+    display: none;
+}
