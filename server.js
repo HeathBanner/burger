@@ -3,6 +3,7 @@ var app = express();
 var orm = require('./config/orm.js');
 var exphbs = require('express-handlebars');
 var routes = require('./controllers/burgers_controller.js');
+var path = require('path');
 
 //==============================================================//
 
