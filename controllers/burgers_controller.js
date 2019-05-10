@@ -49,7 +49,7 @@ router.get('/', function(req, res) {
             };
         }
         console.log(burgersObj);
-        res.render('../views/index', burgersObj);
+        res.render('index.handlebars', burgersObj);
     });
 });
 
